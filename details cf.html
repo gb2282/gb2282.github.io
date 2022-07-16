@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Products- The Pathik Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="cart.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <img src="logo2.png" width="125" alt="" />
+            </a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="">Acocunt</a></li>
+            </ul>
+          </nav>
+          <img src="cart.png" width="25px" height="25px" />
+          <img src="menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div>
+
+        <!--singel-->
+        <div class="small-container single-product">
+          <div class="row">
+            <div class="col-2">
+              <img src="Pathik\powder\mp.jpg" width="100%" />
+            </div>
+            <div class="col-2">
+              <p>powder---></p>
+              <h2>chilli flakes</h2>
+              <h4>90/-</h4>
+              <input type="number" value="1" />
+              <a href="" class="btn">Add to Cart</a>
+              <h3>Product details</h3>
+              <p>no preservatives</p>
+            </div>
+          </div>
+        </div>
+        <!-----categories----->
+
+        <div class="categories">
+          <div class="small-container">
+            <div class="row row-2">
+              <h2>Other Products:-</h2>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <a href="detail c.html">
+                  <img src="Pathik\herbs\clemon.jpg" alt="" />
+                  <h4>Chamomile tea</h4>
+                </a>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p>120/-</p>
+              </div>
+              <div class="col-3">
+                <a href="detail o.html">
+                  <img src="Pathik\jar\o.jpg" alt="" />
+                  <h4>orange marmalade</h4>
+                </a>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p>100/-</p>
+              </div>
+
+              <div class="col-3">
+                <a href="detail a.html">
+                  <img src="Pathik\skincare\s.jpg" alt="" />
+                  <h4>Apricot oil</h4></a
+                >
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p>200/-</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---footer---->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download our app</h3>
+            <div class="app-logo">
+              <img src="play-store.png" alt="" />
+              <img src="app-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <p>Our purpose is to provide livelihood to our people in Pahad</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Return policy</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">copyright 2022 - TPS</p>
+      </div>
+    </div>
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
