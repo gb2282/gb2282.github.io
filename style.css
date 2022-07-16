@@ -101,6 +101,7 @@ p {
 }
 .col-3 img {
   width: 100%;
+  border-radius: 25px;
 }
 .small-container {
   max-width: 1080px;
